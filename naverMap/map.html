@@ -15,11 +15,15 @@
       });
       var marker = new naver.maps.Marker({
         position: new naver.maps.LatLng(x,y),
-        map: obj
+        map: obj,
+        icon: {
+        url: 'http://leehwa08.github.io/naverMap/bucks.png'
+        size: new naver.maps.Size(50, 50)
+        }
 });
     }
     window.addEventListener('load',function(){
-      mapInit(37.3595704, 127.105399);
+      mapInit(37.497859, 127.028586);
     });
   </script>
 </head>
