@@ -3,9 +3,9 @@ $(document).ready(function(){
   
   // container_top
   var hd_oH = $('.hd_area').outerHeight();
-  $('#container').css('margin-top',hd_oH);
+  $('.main_page').css('margin-top',hd_oH);
   
-  // 메인 bxslider
+  // 메인 인트로 bxslider
   var visual_slide = $('.visual').bxSlider({
     auto:true,
     controls:false,
@@ -21,7 +21,7 @@ $(document).ready(function(){
     visual_slide.goToSlide(vs_txt_idx);
   })  
   
-  // 메인 visual_cnt height fix
+  // 메인 인트로 우측 box height fix
   $(window).on('resize',function(){
     var mv_H = $('.main_intro').height();
     $('.visual_cnt').css('height',mv_H*0.9);
@@ -46,11 +46,41 @@ $(document).ready(function(){
       $(this).removeClass('over');
     }
   });
-//  $('.main_global .main_more').on('mouseenter',function(){
-//    $(this).addClass('over');
-//  })
-//  
-//  function mainHover(){
-//    
-//  }
+  
+  // 서브페이지 탭 적용
+  $('.sub_area ul li a').on('click',function(e){
+    e.preventDefault();
+    var subTab = $('.sub_area ul li a').index($(this));
+    $('.sub_area ul li a').removeClass('active').eq(subTab).addClass('active');
+    $('.section').eq(subTab).addClass('on').siblings().removeClass('on');
+    $(window).scrollTop(0);
+  })
+  $(window).on('scroll',function(){
+    var wsT = $(this).scrollTop();
+    var ha_oH = $('.hd_area').outerHeight();
+    var ht_oH = $('.hd_title').outerHeight();
+    
+    wsT>ha_oH+ht_oH? $('.hd_sub').addClass('fix'):$('.hd_sub').removeClass('fix');
+  });
+  
+  // contact us 페이지 구글맵 api
+  function mapInit(x,y){
+      obj=new naver.maps.Map(document.getElementById('map'),{
+        center: new naver.maps.LatLng(x,y),
+        zoom: 12
+      });
+      var marker = new naver.maps.Marker({
+        position: new naver.maps.LatLng(x,y),
+        map: obj
+        }
+      });
+    }
+    window.addEventListener('load',function(){
+      mapInit(37.497859, 127.028586);
+    });
 })
+
+
+
+
+
