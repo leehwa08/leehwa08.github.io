@@ -14,7 +14,7 @@ img{display: block;}
 /* layout */
 body{color: #00262b;}
 #wrap{font-family: 'Nanum Gothic', sans-serif;letter-spacing: -1px;}
-h1, h2, h3, h4, h5, h6, .title, .main_more{font-family: 'NanumSquare','Malgun Gothic','돋움','dotum',sans-serif;}
+h1, h2, h3, h4, h5, h6, .title, .main_more{font-family: 'NanumSquare','Malgun Gothic','돋움','dotum',sans-serif;letter-spacing: 0;}
 #header{font-family: 'NanumSquare','Malgun Gothic','돋움','dotum',sans-serif;}
 #container{}
 .inner{margin: auto;width: 980px;}
@@ -208,8 +208,47 @@ h1, h2, h3, h4, h5, h6, .title, .main_more{font-family: 'NanumSquare','Malgun Go
 #cpn_affiliate .sports_club ul li a .club_info .subs{margin-top: 10px;font-size: 0.875em;font-weight: 400;}
 
 #cpn_contact{}
+#cpn_contact #map{width: 100%;height: 485px;border: 1px solid #eee;}
+#cpn_contact #map .contact_area{position: absolute;top: 120px;left: 40px;padding: 50px;background: linear-gradient(#ffc133,#f06d3e);color: #fff;letter-spacing: 0;z-index: 5;}
+#cpn_contact #map .contact_area a{color: #fff;}
+#cpn_contact #map .contact_area .title{}
+#cpn_contact #map .contact_area .addr{font-size: 0.875em;}
+#cpn_contact #map .contact_area .info{margin-top: 30px;font-size: 0.75em;}
+#cpn_contact #map .contact_area .info span{display: block;}
+#cpn_contact .sub_title.visit_area{margin-top: 100px;}
+#cpn_contact .visit_flow{}
+#cpn_contact .visit_flow li{position: relative;margin-bottom: 40px;}
+#cpn_contact .visit_flow li .thumb{margin-right: 30px;width: 550px;}
+#cpn_contact .visit_flow li .thumb img{width: 100%;}
+#cpn_contact .visit_flow li .info{position: absolute;bottom: 0;left: 580px;font-weight: 700;}
+#cpn_contact .visit_flow li .info h5{margin-bottom: 30px;font-family: 'Nanum Gothic', sans-serif;font-size: 1em;text-decoration: underline;}
+#cpn_contact .visit_flow li .info p{font-size: 0.875em;}
 
 /* people */
+#pp_career{}
+#pp_career .sub_title{margin-bottom: 40px;}
+#pp_career .sub_title .capt{text-align: left;font-size: 1.25em;}
+#pp_career ul{}
+#pp_career ul li{float: left;margin: 0 40px 40px 0;width: 300px;border-bottom: 2px solid #ffc133;}
+#pp_career ul li:nth-child(3n){margin-right: 0;}
+#pp_career ul li .thumb{}
+#pp_career ul li .thumb img{}
+#pp_career ul li .subs{padding-top: 30px;height: 168px;text-align: center;}
+#pp_career ul li .subs h5{font-size: 1em;font-weight: 700;}
+#pp_career ul li .subs p{margin-top: 20px;font-size: 0.75em;letter-spacing: 0;}
+#pp_career ul li.recruit{width: 296px;height: 396px;border: 2px solid #ffc133;}
+#pp_career ul li.recruit .subs{padding-left: 35px;font-weight: 700;text-align: left;}
+#pp_career ul li.recruit .subs p a:hover{text-decoration: underline;}
+
+#pp_leadership{}
+#pp_leadership ul{}
+#pp_leadership ul li{float: left;margin-bottom: 30px;width: 100%;}
+#pp_leadership ul li .leader{float: left;}
+#pp_leadership ul li .info{position: relative;float: right;width: 808px;height: 142px;border-top: 1px solid #ffc133;}
+#pp_leadership ul li .info .name{margin-top: 20px;font-size: 1.125em;font-weight: 700;}
+#pp_leadership ul li .info .name .eng_name{margin-left: 5px;font-size: 0.778em;font-weight: 400;}
+#pp_leadership ul li .info .position{font-size: 0.875em;}
+#pp_leadership ul li .info .intro{position: absolute;bottom: 0;left: 0;font-size: 0.75em;letter-spacing: 0;}
 
 /* portfolio */
 

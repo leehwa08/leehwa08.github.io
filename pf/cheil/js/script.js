@@ -57,27 +57,11 @@ $(document).ready(function(){
   })
   $(window).on('scroll',function(){
     var wsT = $(this).scrollTop();
-    var ha_oH = $('.hd_area').outerHeight();
     var ht_oH = $('.hd_title').outerHeight();
     
-    wsT>ha_oH+ht_oH? $('.hd_sub').addClass('fix'):$('.hd_sub').removeClass('fix');
+    wsT>ht_oH? $('.hd_sub').addClass('fix'):$('.hd_sub').removeClass('fix');
   });
   
-  // contact us 페이지 구글맵 api
-  function mapInit(x,y){
-      obj=new naver.maps.Map(document.getElementById('map'),{
-        center: new naver.maps.LatLng(x,y),
-        zoom: 12
-      });
-      var marker = new naver.maps.Marker({
-        position: new naver.maps.LatLng(x,y),
-        map: obj
-        }
-      });
-    }
-    window.addEventListener('load',function(){
-      mapInit(37.497859, 127.028586);
-    });
 })
 
 
