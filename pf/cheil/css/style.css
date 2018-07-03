@@ -52,11 +52,11 @@ h1, h2, h3, h4, h5, h6, .title, .main_more{font-family: 'NanumSquare','Malgun Go
 #header .hd_title h2 span{font-size: 0.5em;}
 #header .hd_sub{background-color: #fff;border-bottom: 1px solid #eee;}
 #header .hd_sub .sub_area{text-align: center;}
-#header .hd_sub .sub_area ul{display: inline-block;}
+#header .hd_sub .sub_area ul{margin: auto;}
 #header .hd_sub .sub_area ul li{float: left;font-size: 1.250em;}
 #header .hd_sub .sub_area ul li a{display: block;padding: 1.5em 2em;}
 #header .hd_sub .sub_area ul li a:hover{color: #f06d3e;text-decoration: underline;}
-#header .hd_sub .sub_area ul li a.active{color: #f06d3e;font-weight: 900;text-decoration: underline;}
+#header .hd_sub .sub_area ul li a.active{color: #f06d3e;text-decoration: underline;}
 #header .hd_sub.fix{position: fixed;top: 80px;left: 0;z-index: 10;}
 
 /* container */
@@ -95,7 +95,7 @@ h1, h2, h3, h4, h5, h6, .title, .main_more{font-family: 'NanumSquare','Malgun Go
 .main_business ul li.last{margin-right: 0;}
 .main_business ul li .thumb{margin-bottom: 30px;}
 .main_business ul li .thumb img{margin: auto;}
-.main_business ul li .title{margin-bottom: 25px;font-size: 1em;}
+.main_business ul li .title{margin-bottom: 1.563em;font-size: 1em;}
 .main_business ul li .subs{font-size: 0.75em;font-weight: 400;line-height: 1.5;}
 .main_eng .main_business ul li{height: 370px;}
 
@@ -253,6 +253,26 @@ h1, h2, h3, h4, h5, h6, .title, .main_more{font-family: 'NanumSquare','Malgun Go
 /* portfolio */
 
 /* ir */
+#ir_info{}
+#ir_info .ir_tab{}
+#ir_info .ir_tab .ir_tab_bx{width: 360px;margin: auto;}
+#ir_info .ir_tab .ir_tab_bx a{float: left;width: 180px;height: 40px;border: 1px solid #ffc133;font-weight: 700;text-align: center;line-height: 40px;letter-spacing: 0;box-sizing: border-box;}
+#ir_info .ir_tab .ir_tab_bx a.active{background-color: #ffc133;}
+#ir_info .ir_area{}
+#ir_info .ir_area .ir_cnt{display: none;}
+#ir_info .ir_area .ir_cnt.on{display: block;}
+#ir_info .ir_area .earning{}
+#ir_info .ir_area .financial{}
+
+#ir_letter{}
+#ir_letter .letter_box{border: 2px solid #ffc133;}
+#ir_letter .letter_box h5{padding: 0 40px;height: 60px;background-color: #ffc133;color: #00262b;font-size: 1.25em;line-height: 60px;}
+#ir_letter .letter_box .letter_area{padding: 0 40px 90px;}
+#ir_letter .letter_box .letter_area h6{margin-top: 50px;color: #f06d3e;font-size: 1.25em;}
+#ir_letter .letter_box .letter_area p{margin-top: 30px;font-size: 0.875em;}
+#ir_letter .letter_box .letter_sign{padding: 0 40px 100px;text-align: right;}
+#ir_letter .letter_box .letter_sign p{font-size: 1em;}
+#ir_letter .letter_box .letter_sign img{display: inline-block;}
 
 /* pr */
 

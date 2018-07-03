@@ -2,17 +2,17 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <title>Cheil Worldwide</title>
   <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/font.css">
   <link rel="stylesheet" href="../css/style.css">
-  <script type="text/javascript" src="../assets/jquery.min.js"></script>
-  <script type="text/javascript" src="../assets/bxslider/jquery.bxslider.min.js">
+  <script src="../assets/jquery.min.js"></script>
+  <script src="../assets/bxslider/jquery.bxslider.min.js">
   </script>
-  <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=ntc4gtfchoyk5LRkeLfG&submodules=geocoder"></script>
-  <script type="text/javascript" src="../js/script.js"></script>
+  <script src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=ntc4gtfchoyk5LRkeLfG&submodules=geocoder"></script>
+  <script src="../js/script.js"></script>
   <!--[if lt IE 9]>
     <script src="js/selectivizr-min.js"></script>
   <![endif]-->
@@ -36,7 +36,7 @@
                 <p class="clearfix ebold">
                     <span>KOR</span>
                     <span>|</span>
-                    <a href="#">ENG</a>
+                    <a href="./eng_index.html">ENG</a>
                 </p>
               </li>
             </ul>
@@ -604,19 +604,32 @@
             </li>
           </ul>
         </div>
-      </div>
-      <script>
+        <script>
         // contact us 페이지 네이버맵 api
-        var map = new naver.maps.Map('map',{
-          center: new naver.maps.LatLng(37.534936, 126.997258),
-          zoom: 12,
-          minZoom: 1
+        function mapInit(x,y){
+          map=new naver.maps.Map(document.getElementById('map'),{
+            center: new naver.maps.LatLng(x,y),
+            zoom: 12
+          });
+          var marker = new naver.maps.Marker({
+            position: new naver.maps.LatLng(37.534810,126.998834),
+            map: map
+          });
+        }
+        window.addEventListener('load',function(){
+          mapInit(37.534936, 126.997258);
         });
-        var marker = new naver.maps.Marker({
-          position: new naver.maps.LatLng(37.534810, 126.998834),
-          map: map
-        });
+//          var map = new naver.maps.Map('map',{
+//          center: new naver.maps.LatLng(37.534936, 126.997258),
+//          zoom: 12,
+//          minZoom: 1
+//        });
+//        var marker = new naver.maps.Marker({
+//          position: new naver.maps.LatLng(37.534810, 126.998834),
+//          map: map
+//        });
       </script>
+      </div>
     </div><!--container end-->
     <div id="footer" class="regular">
        <div class="inner">
