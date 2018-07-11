@@ -83,6 +83,12 @@ $(document).ready(function(){
     $('.ir_cnt').eq(irTab).addClass('on').siblings().removeClass('on');
   })
   
+  // 재무정보 select
+//  function financeStatusSel(){
+//	if($("#financeStatus").val() != null){
+//		location.href = "/investInfo/financeStatus.do?year=" + $("#financeStatus").val();
+//  }
+  
 })
 
 
