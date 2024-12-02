@@ -50,13 +50,13 @@ $(document).ready(function(){
   // 서브페이지 박스 width 설정
   var subList = [];
   var sumResult = 0;
-  for(var i = 0; i < $('.sub_area ul li').length; i++){
+  for(var i = 0;i < $('.sub_area ul li').length;i++){
     subList[i] = $('.sub_area ul li').eq(i).outerWidth();
     // 서브메뉴 li의 width값을 for문으로 반복해 배열완성
     sumResult += subList[i];
     // sumResult 값에 subList 배열 값을 반복으로 더하며 값을 대입.
   }
-  $('.sub_area ul').css('width',sumResult+1);  
+  $('.sub_area ul').css('width',sumResult+1); 
   
   // 서브페이지 탭 적용
   $('.sub_area ul li a').on('click',function(e){
