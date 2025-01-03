@@ -47,4 +47,17 @@ $(document).ready(function () {
 			}
 		};
 	}
+
+	// works
+	$('#work').find('.list-anchor').on('click', function(e){
+		var popupBox = $(this).next('.popup-box');
+
+		e.preventDefault();
+		popupBox.fadeIn(200);
+	});
+	$('#work').find('.popup-box .btn-popup-close').on('click', function(){
+		var popupBox = $(this).parents('.popup-box');
+
+		popupBox.fadeOut(200);
+	});
 });

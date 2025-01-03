@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/common.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js">
+	</script>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 	<title>LEEHWA Portfolio</title>
 </head>
+
 <body data-page-name="WORKS">
 	<div id="wrap">
 		<!--
@@ -30,7 +35,7 @@
 					<i class="rotate right"></i>
 					<i></i>
 				</button>
-				<div class="gnb-box">
+				<div class="gnb-box" id="gnb" tabindex="1">
 					<ul>
 						<li>
 							<a href="index.html" title="바로가기">
@@ -52,27 +57,93 @@
 								<span>CONTACT</span>
 							</a>
 						</li>
-					</ul>					
+					</ul>
 				</div>
 			</div>
 		</header>
 		<div id="container">
 			<section id="work">
-				<div class="inner-box">
-					
+				<div class="content-box">
+					<h2>Works</h2>
+					<div class="inner-box">
+						<!-- <div class="work-tab-box">
+						<ul>
+							<li>대학</li>
+							<li>공공기관</li>
+							<li>기업</li>
+						</ul>
+					</div> -->
+						<div class="work-con-box">
+							<ul>
+								<li>
+									<a href="#a" title="바로가기" class="list-anchor">
+										<div class="logo-box">
+											<img src="./img/logo/logo-catholic.png" alt="카톨릭대학교">
+										</div>
+										<div class="txt-box">
+											<div>
+												<p class="title">카톨릭대학교</p>
+												<p class="period"><span>2024.01 ~ 2024.04</span></p>
+												<p class="txt">학과, 부속사이트 리뉴얼 구축</p>
+											</div>
+										</div>
+									</a>
+									<div class="popup-box">
+										<div class="pop-title-box">
+											<p>카톨릭대학교</p>
+										</div>
+										<div class="pop-con-box">
+											<div class="pop-img-box">
+												<img src="./img/img-default.jpg" alt="디폴트 이미지">
+											</div>
+											<div class="pop-txt-box">
+												<ul>
+													<li>업무 : 학과, 부속사이트 리뉴얼 구축 관련 퍼블리싱 파트 총괄</li>
+													<li>성과 :
+														<ol class="ol-decimal">
+															<li>사이트 리뉴얼 구축 완료(템플릿 3종, 총 60개 운영 사이트)</li>
+															<li>템플릿 3종 중 1종 퍼블리싱 작업 및 60개 운영 사이트의 퍼블리싱 상황 체크 및 검토</li>
+															<li>기획, 디자인 관련 외주업체와 퍼블리싱 작업 관련 이슈사항 협의 및 처리</li>
+														</ol>
+													</li>
+												</ul>
+												<div class="link-box">
+													<a href="#a" title="바로가기">링크제목</a>
+													<ul>
+														<li>기타링크 : <a href="#a" title="바로가기">링크2</a></li>
+														<li>기타링크 : <a href="#a" title="바로가기">링크2</a></li>
+														<li>기타링크 : <a href="#a" title="바로가기">링크2</a></li>
+													</ul>
+												</div>
+											</div>
+											<div class="popup-navi-box">
+												<button type="button" class="btn-popup-prev"><span class="hide">이전</span></button>
+												<button type="button" class="btn-popup-next"><span class="hide">다음</span></button>
+											</div>
+										</div>
+										<button type="button" class="btn-popup-close">
+											<i class="far fa-times-circle"></i>
+											<span class="hide">팝업 닫기</span>
+										</button>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</section>
 		</div>
 		<footer>
-            <div class="floating-box">
-                <a href="https://hwaaaaa.notion.site/f2f116b9f7144d0fb85e1b54f9f1d568?pvs=4" target="_blank" title="새창열림">
-                    <span>CAREER</span>
-                </a>
-            </div>
+			<div class="floating-box">
+				<a href="https://hwaaaaa.notion.site/f2f116b9f7144d0fb85e1b54f9f1d568?pvs=4" target="_blank" title="새창열림">
+					<span>CAREER</span>
+				</a>
+			</div>
 			<div class="inner-box">
 				<p>© 2024 LEEHWA Portfolio. ALL Rights Reserved.</p>
 			</div>
 		</footer>
-	</div>	
+	</div>
 </body>
+
 </html>

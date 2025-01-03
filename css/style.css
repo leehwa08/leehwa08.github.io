@@ -1,5 +1,5 @@
 /* main */
-#home{height:100vh;}
+#home{height:100vh;background:#000;}
 #home .inner-box{position:absolute;top:50%;left:50%;z-index:30;width:100%;transform:translate(-50%, -50%);}
 #home #bgVideo{position:fixed;top:0;left:0;min-width:100%;min-height:100%;}
 #home .txt-box > div{position:relative;padding:20px 0;font-family:'CoreGothicM';font-weight:500;}
@@ -12,12 +12,13 @@
 
 /* about */
 #about{}
+#about .far:before, #about .fas:before{font-size:5rem;color:var(--first-color);}
 #about .content-box{}
 #about .content-box .left-box{top:180px;}
 #about .con-box:nth-of-type(even){background-color:#f9f9f9;}
 #about .my-info{}
 #about .my-info p, #about .my-info span, #about .my-info ul li{color:#fff;}
-#about .my-info .inner-box{padding:80px 40px;background-color:#21284f;border-radius:10px;}
+#about .my-info .inner-box{padding:60px 20px;background-color:var(--secondary-color);border-radius:10px;}
 #about .my-info .pic{margin:0 auto 50px;width:240px;height:260px;border:2px solid #eee;border-radius:50%;overflow:hidden;box-sizing:border-box;}
 #about .my-info .pic img{width:100%;height:100%;object-fit:cover;}
 #about .my-info .intro{text-align:center;}
@@ -30,19 +31,70 @@
 #about .my-info .intro .intro-txt-box{padding:30px 0 0;}
 #about .my-info .intro .intro-txt-box p{display:inline-block;padding:30px;min-width:450px;border:1px solid #ddd;border-radius:20px;line-height:2.6rem;}
 #about .my-career{margin:-150px 0 0;padding:150px 0 0;}
+#about .my-career .inner-box{}
+#about .my-career .inner-box > div{display:flex;border:1px solid var(--secondary-color);border-radius:10px;box-shadow:2px 2px 5px rgba(0,0,0,.3);}
+#about .my-career .inner-box > div > p{padding:20px 30px;border-right:1px solid var(--secondary-color);}
+#about .my-career .inner-box > div > p span{display:inline-block;margin:0 15px 0 0;}
+#about .my-career .inner-box > div > p span:last-of-type{margin:0;}
+#about .my-career .inner-box > div > p .period{margin:0 0 15px 0;padding:3px 10px;background-color:var(--secondary-color);border-radius:5px;color:#fff;}
+#about .my-career .inner-box > div > p .company{position:relative;z-index:10;}
+#about .my-career .inner-box > div > p .company:after{content:'';position:absolute;bottom:0;left:0;z-index:-10;width:100%;height:10px;background-color:var(--first-color);opacity:.5;}
+#about .my-career .inner-box > div > div{padding:20px 30px;}
+#about .my-career .inner-box > div > div > p{}
+#about .my-skills{}
+#about .my-skills ul{display:flex;flex-wrap:wrap;margin:-20px 0 0;}
+#about .my-skills ul li{margin:20px 21px 0 0;padding:25px 20px;width:calc(33.3333% - 14px);border:1px solid var(--secondary-color);background-color:#fff;border-radius:1rem;box-sizing:border-box;}
+#about .my-skills ul li:nth-of-type(3n){margin-right:0;}
+#about .my-skills ul li .cate{padding:0 0 20px;}
+#about .my-skills ul li .cate > p{padding:20px 0 0;font-weight:500;font-size:2rem;line-height:3rem;}
+#about .my-skills ul li .desc{}
+#about .my-skills ul li .desc > p{word-break:keep-all;}
 #about .my-certificate{position:relative;}
 #about .my-certificate ul{display:flex;justify-content:space-between;align-items:start;}
 #about .my-certificate ul li{width:33%;}
 #about .my-certificate ul li > div{text-align:center;}
-#about .my-certificate ul li .icon{margin: 0 auto 20px;width:50px;height:50px;border:1px solid rgba(255,255,255,.5);background-color:#21284f;border-radius:10px;font-size:2rem;color:#fff;line-height:5rem;text-align:center;box-shadow:2px 2px #bbb;}
+#about .my-certificate ul li .icon{margin: 0 auto 20px;width:50px;height:50px;border:1px solid rgba(255,255,255,.5);background-color:var(--secondary-color);border-radius:10px;font-size:2rem;color:#fff;line-height:5rem;text-align:center;box-shadow:2px 2px #bbb;}
 #about .my-certificate ul li > div span{display:block;}
-#about .my-skills{}
-#about .my-skills ul{display:flex;flex-wrap:wrap;}
-#about .my-skills ul li{margin:0 20px 20px 0;padding:15px 20px;width:calc(25% - 15px);border:1px solid #21284f;background-color:#fff;border-radius:1rem;text-align:center;box-sizing:border-box;}
-#about .my-skills ul li:nth-of-type(4n){margin-right:0;}
 
 /* portfolio */
 #work{}
+#work .work-con-box{}
+#work .work-con-box > ul{display:flex;flex-wrap:wrap;margin:-30px 0 0;}
+#work .work-con-box > ul > li{margin:30px 30px 0 0;width:calc(100% / 3 - 20px);}
+#work .work-con-box > ul > li:nth-of-type(3n){margin-right:0;}
+#work .work-con-box > ul > li > a{display:block;position:relative;border:1px solid #ccc;border-radius:1rem;overflow:hidden;}
+#work .work-con-box .logo-box{display:flex;justify-content:center;align-items:center;position:relative;padding:10px 20px;min-height:200px;background-color:#fff;box-sizing:border-box;}
+#work .work-con-box .logo-box .cate-box{position:absolute;top:10px;left:10px;width:100%;}
+#work .work-con-box .logo-box .cate-box span{display:inline-block;padding:8px 10px;background-color:var(--first-color);border-radius:.5rem;font-weight:500;font-size:1.4rem;color:#fff;line-height:1;}
+#work .work-con-box .logo-box img{display:block;width: 100%;max-width:200px;}
+#work .work-con-box .txt-box{display:flex;justify-content:center;align-items:center;position:absolute;top:100%;left:0;width:100%;height:100%;background-color: rgba(0,0,0,.8);transition:top .4s;}
+#work .work-con-box > ul > li > a:hover .txt-box{top:0;}
+#work .work-con-box .txt-box > div{padding:20px;max-height:100%;color:#fff;text-align:center;overflow:auto;}
+#work .work-con-box .txt-box .title{position:relative;font-weight:500;font-size:1.8rem;}
+#work .work-con-box .txt-box .period{padding:0 0 12px;}
+#work .work-con-box .txt-box .period span{display:inline-block;padding:0 8px;background-color:var(--first-color);border-radius:3px;font-weight:500;font-size:1.2rem;color:#fff;line-height:2rem;}
+#work .work-con-box .txt-box .txt{font-size:1.4rem;line-height:2.4rem;}
+#work .work-con-box .popup-box{display:none;position:fixed;top:50%;left:50%;z-index:20;width:95%;max-width:1000px;height:95%;max-height:600px;background-color:#fff;border-radius:1rem;transform:translate(-50%, -50%);box-shadow:2px 2px 10px rgba(0,0,0,.3);overflow:hidden;}
+#work .work-con-box .popup-box .pop-title-box{padding:15px 30px;background-color:var(--secondary-color);}
+#work .work-con-box .popup-box .pop-title-box > p{position:relative;padding:0 0 0 30px;font-weight:500;font-size:2rem;color:#fff;line-height:3rem;}
+#work .work-con-box .popup-box .pop-title-box > p:before{content:'';position:absolute;top:50%;left:0;width:20px;height:2px;background-color:#fff;transform:translateY(-50%);}
+#work .work-con-box .popup-box .pop-con-box{padding:40px;height:calc(100% - 60px);overflow:auto;}
+#work .work-con-box .popup-box .pop-img-box{float:left;position:sticky;top:0;width:55%;}
+#work .work-con-box .popup-box .pop-img-box img{display:block;max-width:100%;}
+#work .work-con-box .popup-box .pop-txt-box{float:left;padding:0 0 0 30px;width:45%;height: auto;}
+#work .work-con-box .popup-box .pop-txt-box > ul{}
+#work .work-con-box .popup-box .pop-txt-box > ul > li{position:relative;padding:0 0 0 15px;}
+#work .work-con-box .popup-box .pop-txt-box > ul > li:before{content:'';position:absolute;top:10px;left:0;width:4px;height:4px;background-color:var(--secondary-color);border-radius:2px;}
+#work .work-con-box .popup-box .pop-txt-box .link-box{padding:20px 0 0;}
+#work .work-con-box .popup-box .pop-txt-box .link-box > a{display:inline-block;padding:15px 20px;min-width:200px;border:1px solid var(--secondary-color);border-radius:.5rem;font-size:1.8rem;line-height:1;text-align:center;transition:all .3s;}
+#work .work-con-box .popup-box .pop-txt-box .link-box > a:hover{background-color:var(--secondary-color);font-weight:500;color:#fff;}
+#work .work-con-box .popup-box .pop-txt-box .link-box > ul{padding:15px 0 0;}
+#work .work-con-box .popup-box .pop-txt-box .link-box > ul > li{position:relative;padding:0 0 0 12px;}
+#work .work-con-box .popup-box .pop-txt-box .link-box > ul > li:before{content:'';position:absolute;top:12px;left:0;width:5px;height:2px;background-color:var(--secondary-color);}
+#work .work-con-box .popup-box .pop-txt-box .link-box > ul > li > a{display:inline-block;}
+#work .work-con-box .popup-box .pop-txt-box .link-box > ul > li > a:hover{text-decoration:underline;}
+#work .work-con-box .popup-box .btn-popup-close{position:absolute;top:15px;right:30px;}
+#work .work-con-box .popup-box .btn-popup-close i:before{font-size:3rem;color:#fff;}
 
 /* contact */
 #contact{}
@@ -50,18 +102,10 @@
 #contact .contact-info ul{}
 #contact .contact-info ul li{}
 #contact .contact-info ul li p{}
-#contact .contact-info ul li span{font-size:24px;}
-#contact .contact-info ul li p{font-size:20px;}
-
-/* Animation */
-@keyframes careerFloating{
-	0%{top:0;}
-	25%{top:-1px;}
-	75%{top:1px;}
-	100%{top:0;}
-}
+#contact .contact-info ul li span{font-size:2.4rem;}
+#contact .contact-info ul li p{font-size:2rem;}
 
 /* Media Query */
 @media screen and (max-width:1024px) {
-
+    #about .my-info{padding:0 20px;}
 }
