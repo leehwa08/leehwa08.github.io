@@ -16,7 +16,7 @@ $(document).ready(function () {
 			$('header').addClass('on');
 			setTimeout(function () {
 				$('header').addClass('menu-show');
-			}, 300);
+			}, 500);
 			$('.gnb-box').fadeIn();
 		} else {
 			$('header').removeClass('menu-show');
@@ -64,6 +64,7 @@ $(document).ready(function () {
 			var $popupBox = $(this).next('.popup-box');
 
 			e.preventDefault();
+			$('body').addClass('over-hidden');
 			$('.popup-box').hide();
 			$popupBox.addClass('open').fadeIn(200);
 			mockupScrolling($popupBox);
@@ -74,6 +75,7 @@ $(document).ready(function () {
 			var $popupBox = $(this).parents('.popup-box');
 
 			$popupBox.removeClass('open').fadeOut(200);
+			$('body').removeClass('over-hidden');
 			mockupScrolling($popupBox);
 		});
 
@@ -101,7 +103,10 @@ $(document).ready(function () {
 
 		function mockupScrolling(param) {
 			var $box = param;
-			var timer = 2000;
+			var moImgHeight = $box.find('.pop-img-box .mo img').height();
+			var calcMoHeight = Math.ceil(moImgHeight / 100) * 100;
+			//var timer = 2000;
+			var timer = parseInt(calcMoHeight * 2.25);
 
 			$box.find('.pop-img-box > div').each(function () {
 				var boxHeight = $(this).height();
