@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="ko">
-
+<html lang="ko" class="no-script">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport"
-		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/common.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js">
 	</script>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
-	<title>LEEHWA Portfolio</title>
+	<title>이화 | Portfolio</title>
 </head>
-
 <body data-page-name="WORKS">
 	<div id="wrap">
 		<!--
@@ -82,7 +82,7 @@
 												</div>
 											</div>
 										</a>
-										<div class="popup-box">
+										<div class="popup-box first" style="display: none;">
 											<div>
 												<div class="pop-title-box">
 													<p>카톨릭대학교</p>
@@ -90,17 +90,17 @@
 												<div class="pop-con-box clearfix">
 													<div class="pop-img-box">
 														<div class="pc">
-															<div><img src="./img/img-catholic-web-a.png" alt="카톨릭대학교 웹 화면"></div>
+															<div><img src="./img/img-catholic-web.png" alt="카톨릭대학교 웹 화면"></div>
 														</div>
 														<div class="mo">
-															<div><img src="./img/img-catholic-mo-a.png" alt="카톨릭대학교 모바일 화면"></div>
+															<div><img src="./img/img-catholic-mo.png" alt="카톨릭대학교 모바일 화면"></div>
 														</div>
 													</div>
 													<div class="pop-txt-box">
 														<div class="info-box">
 															<div>
 																<h4>작업기간</h4>
-																<p class="period">2024.01 ~ 2024.04</p>
+																<p>2024.01 ~ 2024.04</p>
 															</div>
 															<div>
 																<h4>역할</h4>
@@ -113,14 +113,14 @@
 																	<li>HTML5/CSS3 및 JavaScript를 활용한 반응형 웹 퍼블리싱</li>
 																	<li>학과, 부속사이트 리뉴얼 구축</li>
 																	<li>60개 운영 사이트의 퍼블리싱 작업 상황 체크 및 검토(외주)</li>
-																</ol>
+																</ul>
 															</div>
 															<div>
 																<h4>성과</h4>
 																<ul class="ul-type-dot">
 																	<li>프로젝트 기한 준수 및 고객과의 협의를 통한 추가 요구사항 반영</li>
 																	<li>템플릿 3종 퍼블리싱 및 60개 운영 사이트 구축 완료</li>
-																</ol>
+																</ul>
 															</div>
 															<div>
 																<h4>기여도</h4>
@@ -129,18 +129,17 @@
 																	<li>템플릿 퍼블리싱 : 약 33% (3종 중 1종 퍼블리싱)</li>
 																</ul>
 															</div>
-														</div>
-														<div class="link-box">
-															<a href="#a" title="새창열림" target="_blank">사이트 바로가기</a>
-															<ul class="ul-type-bar">
-																<li>기타링크 : <a href="#a" title="새창열림" target="_blank">링크</a></li>
-															</ul>
+															<div class="link-box">
+																<h4>링크</h4>
+																<ul class="ul-type-bar">
+																	<li>템플릿 : <a href="https://korean.catholic.ac.kr/korean/index.do" title="새창열림" target="_blank">가톨릭대학교 국어국문학과</a></li>
+																</ul>
+																<p class="mark-p">템플릿은 운영중인 사이트로 대체</p>
+															</div>
 														</div>
 														<div class="navi-box">
-															<button type="button" class="btn-popup-prev"><i class="fas fa-angle-left"></i><span
-																	class="hide">이전</span></button>
-															<button type="button" class="btn-popup-next"><i class="fas fa-angle-right"></i><span
-																	class="hide">다음</span></button>
+															<button type="button" class="btn-popup-prev"><i class="fas fa-angle-left"></i><span class="hide">이전</span></button>
+															<button type="button" class="btn-popup-next"><i class="fas fa-angle-right"></i><span class="hide">다음</span></button>
 														</div>
 													</div>
 												</div>
@@ -182,7 +181,7 @@
 														<div class="info-box">
 															<div>
 																<h4>작업기간</h4>
-																<p class="period">2023.05 ~ 2023.12</p>
+																<p>2023.05 ~ 2023.12</p>
 															</div>
 															<div>
 																<h4>역할</h4>
@@ -214,12 +213,16 @@
 																	<li>운영 사이트 구축 작업 : 약 32% (28개 중 9개 구축)</li>
 																</ul>
 															</div>
-														</div>
-														<div class="link-box">
-															<a href="#a" title="새창열림" target="_blank">사이트 바로가기</a>
-															<ul class="ul-type-bar">
-																<li>기타링크 : <a href="#a" title="새창열림" target="_blank">링크</a></li>
-															</ul>
+															<div class="link-box">
+																<h4>링크</h4>
+																<a href="https://www.sewu.ac.kr/sewu/main.do" title="새창열림" target="_blank">사이트 바로가기</a>
+																<ul class="ul-type-bar">
+																	<li><a href="https://www.sewu.ac.kr/sewu/index.do" title="새창열림" target="_blank">인트로 페이지</a></li>
+																	<li><a href="https://www.sewu.ac.kr/admission/index.do" title="새창열림" target="_blank">입학안내 홈페이지</a></li>
+																	<li>템플릿 : <a href="https://www.sewu.ac.kr/library/etc/intro.do" title="새창열림" target="_blank">숭의여자대학교 문헌정보학과</a></li>
+																</ul>
+																<p class="mark-p">템플릿은 운영중인 사이트로 대체</p>
+															</div>
 														</div>
 														<div class="navi-box">
 															<button type="button" class="btn-popup-prev"><i class="fas fa-angle-left"></i><span
@@ -249,7 +252,7 @@
 												</div>
 											</div>
 										</a>
-										<div class="popup-box">
+										<div class="popup-box" style="display: none;">
 											<div>
 												<div class="pop-title-box">
 													<p>숙명여자대학교</p>
@@ -267,7 +270,7 @@
 														<div class="info-box">
 															<div>
 																<h4>작업기간</h4>
-																<p class="period">2023.02 ~ 2023.05</p>
+																<p>2023.02 ~ 2023.05</p>
 															</div>
 															<div>
 																<h4>역할</h4>
@@ -281,7 +284,7 @@
 																	<li>국, 영문 대표 사이트 리뉴얼 구축</li>
 																	<li>웹접근성 고려한 코드 작성</li>
 																	<li>구축 완료 후 사용자 대상 자사 솔루션 교육 진행</li>
-																</ol>
+																</ul>
 															</div>
 															<div>
 																<h4>성과</h4>
@@ -289,7 +292,7 @@
 																	<li>프로젝트 기한 준수 및 고객과의 협의를 통한 추가 요구사항 반영</li>
 																	<li>국, 영문 대표 사이트 리뉴얼 구축 완료</li>
 																	<li>대표 홈페이지 웹접근성 심사 통과</li>
-																</ol>
+																</ul>
 															</div>
 															<div>
 																<h4>기여도</h4>
@@ -298,18 +301,15 @@
 																	<li>퍼블리싱 : 약 60%</li>
 																</ul>
 															</div>
-														</div>
-														<div class="link-box">
-															<a href="#a" title="새창열림" target="_blank">사이트 바로가기</a>
-															<ul class="ul-type-bar">
-																<li>기타링크 : <a href="#a" title="새창열림" target="_blank">링크</a></li>
-															</ul>
+															<div class="link-box">
+																<h4>링크</h4>
+																<a href="https://www.sookmyung.ac.kr/kr/index.do" title="새창열림" target="_blank">사이트
+																	바로가기</a>
+															</div>
 														</div>
 														<div class="navi-box">
-															<button type="button" class="btn-popup-prev"><i class="fas fa-angle-left"></i><span
-																	class="hide">이전</span></button>
-															<button type="button" class="btn-popup-next"><i class="fas fa-angle-right"></i><span
-																	class="hide">다음</span></button>
+															<button type="button" class="btn-popup-prev"><i class="fas fa-angle-left"></i><span class="hide">이전</span></button>
+															<button type="button" class="btn-popup-next"><i class="fas fa-angle-right"></i><span class="hide">다음</span></button>
 														</div>
 													</div>
 												</div>
@@ -333,7 +333,7 @@
 												</div>
 											</div>
 										</a>
-										<div class="popup-box">
+										<div class="popup-box" style="display: none;">
 											<div>
 												<div class="pop-title-box">
 													<p>이화여자대학교</p>
@@ -351,7 +351,7 @@
 														<div class="info-box">
 															<div>
 																<h4>작업기간</h4>
-																<p class="period">2022.06 ~ 2023.02</p>
+																<p>2022.06 ~ 2023.02</p>
 															</div>
 															<div>
 																<h4>역할</h4>
@@ -364,14 +364,14 @@
 																	<li>HTML5/CSS3 및 JavaScript를 활용한 반응형 웹 퍼블리싱</li>
 																	<li>학과 및 부속기관 홈페이지 구축 관련 퍼블리싱</li>
 																	<li>구축 완료 후 사용자 대상 자사 솔루션 교육 진행</li>
-																</ol>
+																</ul>
 															</div>
 															<div>
 																<h4>성과</h4>
 																<ul class="ul-type-dot">
 																	<li>프로젝트 기한 준수 및 고객과의 협의를 통한 추가 요구사항 반영</li>
 																	<li>템플릿 15종 퍼블리싱 및 47개 운영 사이트 리뉴얼 구축 완료</li>
-																</ol>
+																</ul>
 															</div>
 															<div>
 																<h4>기여도</h4>
@@ -381,18 +381,17 @@
 																	<li>운영 사이트 구축 작업 : 약 21% (47개 중 10개 구축)</li>
 																</ul>
 															</div>
-														</div>
-														<div class="link-box">
-															<a href="#a" title="새창열림" target="_blank">사이트 바로가기</a>
-															<ul class="ul-type-bar">
-																<li>기타링크 : <a href="#a" title="새창열림" target="_blank">링크</a></li>
-															</ul>
+															<div class="link-box">
+																<h4>링크</h4>
+																<ul class="ul-type-bar">
+																	<li>템플릿 : <a href="https://graduate.ewha.ac.kr/graduate/index.do" title="새창열림" target="_blank">이화여자대학교 대학원</a></li>
+																</ul>
+																<p class="mark-p">템플릿은 운영중인 사이트로 대체</p>
+															</div>
 														</div>
 														<div class="navi-box">
-															<button type="button" class="btn-popup-prev"><i class="fas fa-angle-left"></i><span
-																	class="hide">이전</span></button>
-															<button type="button" class="btn-popup-next"><i class="fas fa-angle-right"></i><span
-																	class="hide">다음</span></button>
+															<button type="button" class="btn-popup-prev"><i class="fas fa-angle-left"></i><span class="hide">이전</span></button>
+															<button type="button" class="btn-popup-next"><i class="fas fa-angle-right"></i><span class="hide">다음</span></button>
 														</div>
 													</div>
 												</div>
@@ -412,11 +411,11 @@
 												<div>
 													<p class="cate"><span>대표</span><span>반응형</span></p>
 													<p class="title">부천대학교</p>
-													<p class="txt">홈페이지 개편</p>
+													<p class="txt">대표 홈페이지 개편</p>
 												</div>
 											</div>
 										</a>
-										<div class="popup-box">
+										<div class="popup-box" style="display: none;">
 											<div>
 												<div class="pop-title-box">
 													<p>부천대학교</p>
@@ -434,7 +433,7 @@
 														<div class="info-box">
 															<div>
 																<h4>작업기간</h4>
-																<p class="period">2022.02 ~ 2022.05</p>
+																<p>2022.02 ~ 2022.05</p>
 															</div>
 															<div>
 																<h4>역할</h4>
@@ -445,15 +444,15 @@
 																<ul class="ul-type-dot">
 																	<li>기획, 디자인 담당 외주업체와 퍼블리싱 작업 관련 이슈사항 협의 및 처리</li>
 																	<li>HTML5/CSS3 및 JavaScript를 활용한 반응형 웹 퍼블리싱</li>
-																	<li>대표홈페이지 리뉴얼 구축</li>
-																</ol>
+																	<li>홈페이지 리뉴얼 구축(대표, 입학 홈페이지 및 인트로 페이지)</li>
+																</ul>
 															</div>
 															<div>
 																<h4>성과</h4>
 																<ul class="ul-type-dot">
 																	<li>프로젝트 기한 준수 및 고객과의 협의를 통한 추가 요구사항 반영</li>
-																	<li>대표홈페이지 리뉴얼 구축 완료</li>
-																</ol>
+																	<li>홈페이지 리뉴얼 구축 완료</li>
+																</ul>
 															</div>
 															<div>
 																<h4>기여도</h4>
@@ -461,18 +460,20 @@
 																	<li>총 퍼블리싱 업무 : 100%</li>
 																</ul>
 															</div>
-														</div>
-														<div class="link-box">
-															<a href="#a" title="새창열림" target="_blank">사이트 바로가기</a>
-															<ul class="ul-type-bar">
-																<li>기타링크 : <a href="#a" title="새창열림" target="_blank">링크</a></li>
-															</ul>
+															<div class="link-box">
+																<h4>링크</h4>
+																<a href="https://www.bc.ac.kr/bcu/main.do" title="새창열림" target="_blank">사이트 바로가기</a>
+																<ul class="ul-type-bar">
+																	<li><a href="https://www.bc.ac.kr/bcu/intro.do" title="새창열림" target="_blank">인트로 페이지</a>
+																	</li>
+																	<li><a href="https://ipsi.bc.ac.kr/ipsi/main.do" title="새창열림" target="_blank">입학안내
+																			홈페이지</a></li>
+																</ul>
+															</div>
 														</div>
 														<div class="navi-box">
-															<button type="button" class="btn-popup-prev"><i class="fas fa-angle-left"></i><span
-																	class="hide">이전</span></button>
-															<button type="button" class="btn-popup-next"><i class="fas fa-angle-right"></i><span
-																	class="hide">다음</span></button>
+															<button type="button" class="btn-popup-prev"><i class="fas fa-angle-left"></i><span class="hide">이전</span></button>
+															<button type="button" class="btn-popup-next"><i class="fas fa-angle-right"></i><span class="hide">다음</span></button>
 														</div>
 													</div>
 												</div>
@@ -496,7 +497,7 @@
 												</div>
 											</div>
 										</a>
-										<div class="popup-box">
+										<div class="popup-box" style="display: none;">
 											<div>
 												<div class="pop-title-box">
 													<p>세종사이버대학교</p>
@@ -514,7 +515,7 @@
 														<div class="info-box">
 															<div>
 																<h4>작업기간</h4>
-																<p class="period">2021.10 ~ 2022.02</p>
+																<p>2021.10 ~ 2022.02</p>
 															</div>
 															<div>
 																<h4>역할</h4>
@@ -526,7 +527,7 @@
 																	<li>외주업체 퍼블리싱 작업 관련 자사 솔루션 교육 및 QA 지원</li>
 																	<li>외주업체 작업본 모니터링 통한 효율적인 솔루션 활용 지원(대학, 학과, 부속사이트)</li>
 																	<li>대학원 홈페이지 퍼블리싱 작업본 관련 코드 개선업무 및 디자인 수정으로 인한 퍼블리싱 수정 작업</li>
-																</ol>
+																</ul>
 															</div>
 															<div>
 																<h4>성과</h4>
@@ -534,7 +535,7 @@
 																	<li>대학원 홈페이지 메인 : 코드 개선업무 및 고객 추가 요청사항 반영 (디자인 변경 등), 기획의도에 맞는 웹페이지 개발</li>
 																	<li>대학 홈페이지 : 자사 솔루션에 관한 신속한 QA 대응으로 프로젝트 기한 준수 기여</li>
 																	<li>7개 부속사이트 리뉴얼 관련 템플릿 2종 퍼블리싱 완료</li>
-																</ol>
+																</ul>
 															</div>
 															<div>
 																<h4>기여도</h4>
@@ -543,18 +544,20 @@
 																	<li>부속사이트 템플릿 2종 퍼블리싱 : 100%</li>
 																</ul>
 															</div>
-														</div>
-														<div class="link-box">
-															<a href="#a" title="새창열림" target="_blank">사이트 바로가기</a>
-															<ul class="ul-type-bar">
-																<li>기타링크 : <a href="#a" title="새창열림" target="_blank">링크</a></li>
-															</ul>
+															<div class="link-box">
+																<h4>링크</h4>
+																<ul class="ul-type-bar">
+																	<li><a href="https://home.sjcu.ac.kr/ko/index.do" title="새창열림" target="_blank">세종사이버대학교</a></li>
+																	<li><a href="https://graduate.sjcu.ac.kr/graduate/index.do" title="새창열림" target="_blank">세종사이버대학교 대학원</a></li>
+																	<li><a href="https://go.sjcu.ac.kr/go/index.do" title="새창열림" target="_blank">세종사이버대학교
+																			입학지원센터</a></li>
+																</ul>
+																<p class="mark-p">기간 경과로 인하여 이전 작업본이 일부만 남아있을 수 있음</p>
+															</div>
 														</div>
 														<div class="navi-box">
-															<button type="button" class="btn-popup-prev"><i class="fas fa-angle-left"></i><span
-																	class="hide">이전</span></button>
-															<button type="button" class="btn-popup-next"><i class="fas fa-angle-right"></i><span
-																	class="hide">다음</span></button>
+															<button type="button" class="btn-popup-prev"><i class="fas fa-angle-left"></i><span class="hide">이전</span></button>
+															<button type="button" class="btn-popup-next"><i class="fas fa-angle-right"></i><span class="hide">다음</span></button>
 														</div>
 													</div>
 												</div>
@@ -578,7 +581,7 @@
 												</div>
 											</div>
 										</a>
-										<div class="popup-box">
+										<div class="popup-box" style="display: none;">
 											<div>
 												<div class="pop-title-box">
 													<p>강원대학교</p>
@@ -596,8 +599,8 @@
 														<div class="info-box">
 															<div>
 																<h4>작업기간</h4>
-																<p class="period">1차 사업 : 2020.12 ~ 2021.03</p>
-																<p class="period">2차 사업 : 2021.08 ~ 2021.12</p>
+																<p>1차 사업 : 2020.12 ~ 2021.03</p>
+																<p>2차 사업 : 2021.08 ~ 2021.12</p>
 															</div>
 															<div>
 																<h4>역할</h4>
@@ -610,14 +613,14 @@
 																	<li>HTML5/CSS3 및 JavaScript를 활용한 반응형 웹 퍼블리싱</li>
 																	<li>학과 및 부속사이트 리뉴얼 구축 관련 퍼블리싱</li>
 																	<li>구축 완료 후 사용자 대상 자사 솔루션 교육 2회 진행</li>
-																</ol>
+																</ul>
 															</div>
 															<div>
 																<h4>성과</h4>
 																<ul class="ul-type-dot">
 																	<li>프로젝트 기한 준수 및 고객과의 협의를 통한 추가 요구사항 반영</li>
 																	<li>템플릿 12종 퍼블리싱 및 1차, 2차 운영 사이트 188개 구축 완료</li>
-																</ol>
+																</ul>
 															</div>
 															<div>
 																<h4>기여도</h4>
@@ -627,18 +630,17 @@
 																	<li>운영 사이트 구축 작업 : 약 37% (188개 중 70개 구축)</li>
 																</ul>
 															</div>
-														</div>
-														<div class="link-box">
-															<a href="#a" title="새창열림" target="_blank">사이트 바로가기</a>
-															<ul class="ul-type-bar">
-																<li>기타링크 : <a href="#a" title="새창열림" target="_blank">링크</a></li>
-															</ul>
+															<div class="link-box">
+																<h4>링크</h4>
+																<ul class="ul-type-bar">
+																	<li>템플릿 : <a href="https://ee.kangwon.ac.kr/ee/index.do" title="새창열림" target="_blank">강원대학교 전자공학과</a></li>
+																</ul>
+																<p class="mark-p">템플릿은 운영중인 사이트로 대체</p>
+															</div>
 														</div>
 														<div class="navi-box">
-															<button type="button" class="btn-popup-prev"><i class="fas fa-angle-left"></i><span
-																	class="hide">이전</span></button>
-															<button type="button" class="btn-popup-next"><i class="fas fa-angle-right"></i><span
-																	class="hide">다음</span></button>
+															<button type="button" class="btn-popup-prev"><i class="fas fa-angle-left"></i><span class="hide">이전</span></button>
+															<button type="button" class="btn-popup-next"><i class="fas fa-angle-right"></i><span class="hide">다음</span></button>
 														</div>
 													</div>
 												</div>
@@ -662,7 +664,7 @@
 												</div>
 											</div>
 										</a>
-										<div class="popup-box">
+										<div class="popup-box" style="display: none;">
 											<div>
 												<div class="pop-title-box">
 													<p>춘천교육대학교</p>
@@ -680,7 +682,7 @@
 														<div class="info-box">
 															<div>
 																<h4>작업기간</h4>
-																<p class="period">2021.04 ~ 2021.07</p>
+																<p>2021.04 ~ 2021.07</p>
 															</div>
 															<div>
 																<h4>역할</h4>
@@ -693,14 +695,14 @@
 																	<li>기획, 디자인 담당 외주업체와 퍼블리싱 작업 관련 이슈사항 협의 및 처리</li>
 																	<li>학과 사이트 리뉴얼 구축 관련 퍼블리싱</li>
 																	<li>구축 완료 후 사용자 대상 자사 솔루션 교육 1회 진행</li>
-																</ol>
+																</ul>
 															</div>
 															<div>
 																<h4>성과</h4>
 																<ul class="ul-type-dot">
 																	<li>프로젝트 기한 준수 및 고객과의 협의를 통한 추가 요구사항 반영</li>
 																	<li>템플릿 7종, 부속사이트(포털) 퍼블리싱 및 32개 학과 및 부속사이트 구축 완료</li>
-																</ol>
+																</ul>
 															</div>
 															<div>
 																<h4>기여도</h4>
@@ -709,18 +711,98 @@
 																	<li>운영 사이트 구축 작업 : 약 59% (32개 중 19개 구축)</li>
 																</ul>
 															</div>
-														</div>
-														<div class="link-box">
-															<a href="https://www.cnue.ac.kr/cnue/index.do" title="새창열림" target="_blank">사이트 바로가기</a>
-															<ul class="ul-type-bar">
-																<li>기타링크 : <a href="https://www.cnue.ac.kr/portal/index.do" title="새창열림" target="_blank">부속사이트(포털) 바로가기</a></li>
-															</ul>
+															<div class="link-box">
+																<h4>링크</h4>
+																<a href="https://www.cnue.ac.kr/cnue/index.do" title="새창열림" target="_blank">사이트 바로가기</a>
+																<ul class="ul-type-bar">
+																	<li><a href="https://www.cnue.ac.kr/portal/index.do" title="새창열림" target="_blank">부속사이트(석우포털)</a></li>
+																	<li>템플릿 : <a href="https://www.cnue.ac.kr/education/index.do" title="새창열림" target="_blank">춘천교육대학교 교육학과</a></li>
+																</ul>
+																<p class="mark-p">템플릿은 운영중인 사이트로 대체</p>
+															</div>
 														</div>
 														<div class="navi-box">
-															<button type="button" class="btn-popup-prev"><i class="fas fa-angle-left"></i><span
-																	class="hide">이전</span></button>
-															<button type="button" class="btn-popup-next"><i class="fas fa-angle-right"></i><span
-																	class="hide">다음</span></button>
+															<button type="button" class="btn-popup-prev"><i class="fas fa-angle-left"></i><span class="hide">이전</span></button>
+															<button type="button" class="btn-popup-next"><i class="fas fa-angle-right"></i><span class="hide">다음</span></button>
+														</div>
+													</div>
+												</div>
+												<button type="button" class="btn-popup-close">
+													<i class="far fa-times-circle"></i>
+													<span class="hide">팝업 닫기</span>
+												</button>
+											</div>
+										</div>
+									</li>
+									<li><!--한체대-->
+										<a href="#a" title="바로가기" class="list-anchor">
+											<div class="logo-box">
+												<img src="./img/logo/logo-knsu.png" alt="한국체육대학교">
+											</div>
+											<div class="txt-box">
+												<div>
+													<p class="cate"><span>템플릿</span><span>반응형</span></p>
+													<p class="title">한국체육대학교</p>
+													<p class="txt">홈페이지 리뉴얼 구축</p>
+												</div>
+											</div>
+										</a>
+										<div class="popup-box" style="display: none;">
+											<div>
+												<div class="pop-title-box">
+													<p>한국체육대학교</p>
+												</div>
+												<div class="pop-con-box clearfix">
+													<div class="pop-img-box">
+														<div class="pc">
+															<div><img src="./img/img-knsu-web.png" alt="한국체육대학교 웹 화면"></div>
+														</div>
+														<div class="mo">
+															<div><img src="./img/img-knsu-mo.png" alt="한국체육대학교 모바일 화면"></div>
+														</div>
+													</div>
+													<div class="pop-txt-box">
+														<div class="info-box">
+															<div>
+																<h4>작업기간</h4>
+																<p>2020.12 ~ 2021.03</p>
+															</div>
+															<div>
+																<h4>역할</h4>
+																<p>퍼블리싱 지원</p>
+															</div>
+															<div>
+																<h4>업무</h4>
+																<ul class="ul-type-dot">
+																	<li>HTML5/CSS3 및 JavaScript를 활용한 반응형 웹 퍼블리싱</li>
+																	<li>학과 사이트 리뉴얼 구축 관련 퍼블리싱</li>
+																</ul>
+															</div>
+															<div>
+																<h4>성과</h4>
+																<ul class="ul-type-dot">
+																	<li>프로젝트 기한 준수 및 고객과의 협의를 통한 추가 요구사항 반영</li>
+																	<li>템플릿 7종 퍼블리싱, 29개 학과 및 부속사이트 구축 완료</li>
+																</ul>
+															</div>
+															<div>
+																<h4>기여도</h4>
+																<ul class="ul-type-dot">
+																	<li>템플릿 퍼블리싱 : 약 29% (7종 중 2종 퍼블리싱)</li>
+																	<li>운영 사이트 구축 작업 : 약 41% (29개 중 12개 구축)</li>
+																</ul>
+															</div>
+															<div class="link-box">
+																<h4>링크</h4>
+																<ul class="ul-type-bar">
+																	<li>템플릿 : <a href="https://www.knsu.ac.kr/sport_industry/index.do" title="새창열림" target="_blank">한국체육대학교 스포츠산업학과</a></li>
+																</ul>
+																<p class="mark-p">템플릿은 운영중인 사이트로 대체</p>
+															</div>
+														</div>
+														<div class="navi-box">
+															<button type="button" class="btn-popup-prev"><i class="fas fa-angle-left"></i><span class="hide">이전</span></button>
+															<button type="button" class="btn-popup-next"><i class="fas fa-angle-right"></i><span class="hide">다음</span></button>
 														</div>
 													</div>
 												</div>
@@ -744,7 +826,7 @@
 												</div>
 											</div>
 										</a>
-										<div class="popup-box">
+										<div class="popup-box" style="display: none;">
 											<div>
 												<div class="pop-title-box">
 													<p>부산기술보증기금</p>
@@ -762,7 +844,7 @@
 														<div class="info-box">
 															<div>
 																<h4>작업기간</h4>
-																<p class="period">2020.07 ~ 2020.11</p>
+																<p>2020.07 ~ 2020.11</p>
 															</div>
 															<div>
 																<h4>역할</h4>
@@ -773,24 +855,19 @@
 																<ul class="ul-type-dot">
 																	<li>자사 솔루션 교육</li>
 																	<li>자사 솔루션 관련 퍼블리싱 QA지원</li>
-																</ol>
+																</ul>
 															</div>
 															<div>
 																<h4>성과</h4>
 																<ul class="ul-type-dot">
 																	<li>외주업체 작업물 모니터링 통한 효율적인 솔루션 활용 지원</li>
 																	<li>솔루션 관련 신속한 QA지원으로 원활한 프로젝트 진행</li>
-																</ol>
+																</ul>
 															</div>
 														</div>
-														<div class="link-box">
-															<a href="https://www.kibo.or.kr/main/index.do" title="새창열림" target="_blank">사이트 바로가기</a>
-														</div>
 														<div class="navi-box">
-															<button type="button" class="btn-popup-prev"><i class="fas fa-angle-left"></i><span
-																	class="hide">이전</span></button>
-															<button type="button" class="btn-popup-next"><i class="fas fa-angle-right"></i><span
-																	class="hide">다음</span></button>
+															<button type="button" class="btn-popup-prev"><i class="fas fa-angle-left"></i><span class="hide">이전</span></button>
+															<button type="button" class="btn-popup-next"><i class="fas fa-angle-right"></i><span class="hide">다음</span></button>
 														</div>
 													</div>
 												</div>
@@ -814,7 +891,7 @@
 												</div>
 											</div>
 										</a>
-										<div class="popup-box">
+										<div class="popup-box" style="display: none;">
 											<div>
 												<div class="pop-title-box">
 													<p>국무조정실</p>
@@ -832,22 +909,22 @@
 														<div class="info-box">
 															<div>
 																<h4>작업기간</h4>
-																<p class="period">2020.06 ~ 2020.07</p>
+																<p>2020.06 ~ 2020.07</p>
 															</div>
 															<div>
 																<h4>업무</h4>
 																<ul class="ul-type-dot">
-																	- 메인 페이지 및 서브 페이지 스타일가이드 리뉴얼 관련 반응형 웹 퍼블리싱
-																	- 웹접근성 고려한 코드 작성
-																</ol>
+																	<li>메인 페이지 및 서브 페이지 스타일가이드 리뉴얼 관련 반응형 웹 퍼블리싱</li>
+																	<li>웹접근성 고려한 코드 작성</li>
+																</ul>
 															</div>
 															<div>
 																<h4>성과</h4>
 																<ul class="ul-type-dot">
-																	- 프로젝트 기한 준수 및 고객과의 협의를 통한 추가 요구사항 반영
-																	- 메인페이지 리뉴얼 구축 완료
-																	- 웹접근성 심사 통과
-																</ol>
+																	<li>프로젝트 기한 준수 및 고객과의 협의를 통한 추가 요구사항 반영</li>
+																	<li>메인페이지 리뉴얼 구축 완료</li>
+																	<li>웹접근성 심사 통과</li>
+																</ul>
 															</div>
 															<div>
 																<h4>기여도</h4>
@@ -855,15 +932,14 @@
 																	<li>퍼블리싱 : 약 60%</li>
 																</ul>
 															</div>
-														</div>
-														<div class="link-box">
-															<a href="https://www.opm.go.kr/opm/index.do" title="새창열림" target="_blank">사이트 바로가기</a>
-														</div>
-														<div class="navi-box">
-															<button type="button" class="btn-popup-prev"><i class="fas fa-angle-left"></i><span
-																	class="hide">이전</span></button>
-															<button type="button" class="btn-popup-next"><i class="fas fa-angle-right"></i><span
-																	class="hide">다음</span></button>
+															<div class="link-box">
+																<h4>링크</h4>
+																<a href="https://www.opm.go.kr/opm/index.do" title="새창열림" target="_blank">사이트 바로가기</a>
+															</div>
+															<div class="navi-box">
+																<button type="button" class="btn-popup-prev"><i class="fas fa-angle-left"></i><span class="hide">이전</span></button>
+																<button type="button" class="btn-popup-next"><i class="fas fa-angle-right"></i><span class="hide">다음</span></button>
+															</div>
 														</div>
 													</div>
 												</div>
@@ -887,7 +963,7 @@
 												</div>
 											</div>
 										</a>
-										<div class="popup-box">
+										<div class="popup-box" style="display: none;">
 											<div>
 												<div class="pop-title-box">
 													<p>인제대학교</p>
@@ -905,21 +981,21 @@
 														<div class="info-box">
 															<div>
 																<h4>작업기간</h4>
-																<p class="period">2020.03 ~ 2020.05</p>
+																<p>2020.03 ~ 2020.05</p>
 															</div>
 															<div>
 																<h4>업무</h4>
 																<ul class="ul-type-dot">
 																	<li>HTML5/CSS3 및 JavaScript를 활용한 반응형 웹 퍼블리싱</li>
 																	<li>학과 사이트 리뉴얼 구축 관련 퍼블리싱</li>
-																</ol>
+																</ul>
 															</div>
 															<div>
 																<h4>성과</h4>
 																<ul class="ul-type-dot">
 																	<li>프로젝트 기한 준수 및 고객과의 협의를 통한 추가 요구사항 반영</li>
 																	<li>템플릿 10종 퍼블리싱 및 16개 학과 운영 사이트 구축 완료</li>
-																</ol>
+																</ul>
 															</div>
 															<div>
 																<h4>기여도</h4>
@@ -928,18 +1004,17 @@
 																	<li>운영 사이트 구축 작업 : 100%</li>
 																</ul>
 															</div>
-														</div>
-														<div class="link-box">
-															<a href="#a" title="새창열림" target="_blank">사이트 바로가기</a>
-															<ul class="ul-type-bar">
-																<li>기타링크 : <a href="#a" title="새창열림" target="_blank">링크</a></li>
-															</ul>
+															<div class="link-box">
+																<h4>링크</h4>
+																<ul class="ul-type-bar">
+																	<li>템플릿 : <a href="https://welfare.inje.ac.kr/welfare/index.do" title="새창열림" target="_blank">인제대학교 사회복지학과</a></li>
+																</ul>
+																<p class="mark-p">템플릿은 운영중인 사이트로 대체</p>
+															</div>
 														</div>
 														<div class="navi-box">
-															<button type="button" class="btn-popup-prev"><i class="fas fa-angle-left"></i><span
-																	class="hide">이전</span></button>
-															<button type="button" class="btn-popup-next"><i class="fas fa-angle-right"></i><span
-																	class="hide">다음</span></button>
+															<button type="button" class="btn-popup-prev"><i class="fas fa-angle-left"></i><span class="hide">이전</span></button>
+															<button type="button" class="btn-popup-next"><i class="fas fa-angle-right"></i><span class="hide">다음</span></button>
 														</div>
 													</div>
 												</div>
@@ -963,7 +1038,7 @@
 												</div>
 											</div>
 										</a>
-										<div class="popup-box">
+										<div class="popup-box" style="display: none;">
 											<div>
 												<div class="pop-title-box">
 													<p>전주대학교</p>
@@ -981,21 +1056,21 @@
 														<div class="info-box">
 															<div>
 																<h4>작업기간</h4>
-																<p class="period">2020.01 ~ 2020.03</p>
+																<p>2020.01 ~ 2020.03</p>
 															</div>
 															<div>
 																<h4>업무</h4>
 																<ul class="ul-type-dot">
 																	<li>HTML5/CSS3 및 JavaScript를 활용한 반응형 웹 퍼블리싱</li>
 																	<li>대표홈페이지 리뉴얼(약 200page) 및 부속사이트 2개 신규 구축 관련 퍼블리싱</li>
-																</ol>
+																</ul>
 															</div>
 															<div>
 																<h4>성과</h4>
 																<ul class="ul-type-dot">
 																	<li>프로젝트 기한 준수 및 고객과의 협의를 통한 추가 요구사항 반영</li>
 																	<li>대학교 메인 홈페이지, 부속 사이트 2종 퍼블리싱 작업 완료</li>
-																</ol>
+																</ul>
 															</div>
 															<div>
 																<h4>기여도</h4>
@@ -1004,18 +1079,90 @@
 																	<li>부속 사이트 퍼블리싱 : 약 50% (2종 중 1종 퍼블리싱)</li>
 																</ul>
 															</div>
-														</div>
-														<div class="link-box">
-															<a href="https://www.jj.ac.kr/jj/main.jsp" title="새창열림" target="_blank">사이트 바로가기</a>
-															<ul class="ul-type-bar">
-																<li>기타링크 : <a href="https://www.jj.ac.kr/jj/index.jsp" title="새창열림" target="_blank">인트로 사이트 바로가기</a></li>
-															</ul>
+															<div class="link-box">
+																<h4>링크</h4>
+																<a href="https://www.jj.ac.kr/jj/main.jsp" title="새창열림" target="_blank">사이트 바로가기</a>
+																<ul class="ul-type-bar">
+																	<li><a href="https://www.jj.ac.kr/jj/index.jsp" title="새창열림" target="_blank">인트로 페이지</a>
+																	</li>
+																</ul>
+															</div>
 														</div>
 														<div class="navi-box">
-															<button type="button" class="btn-popup-prev"><i class="fas fa-angle-left"></i><span
-																	class="hide">이전</span></button>
-															<button type="button" class="btn-popup-next"><i class="fas fa-angle-right"></i><span
-																	class="hide">다음</span></button>
+															<button type="button" class="btn-popup-prev"><i class="fas fa-angle-left"></i><span class="hide">이전</span></button>
+															<button type="button" class="btn-popup-next"><i class="fas fa-angle-right"></i><span class="hide">다음</span></button>
+														</div>
+													</div>
+												</div>
+												<button type="button" class="btn-popup-close">
+													<i class="far fa-times-circle"></i>
+													<span class="hide">팝업 닫기</span>
+												</button>
+											</div>
+										</div>
+									</li>
+									<li><!--연세대학교 기술지주회사-->
+										<a href="#a" title="바로가기" class="list-anchor">
+											<div class="logo-box">
+												<img src="./img/logo/logo-ysholdings.gif" alt="연세대학교 기술지주회사">
+											</div>
+											<div class="txt-box">
+												<div>
+													<p class="cate"><span>대표</span><span>반응형</span></p>
+													<p class="title">연세대학교 기술지주회사</p>
+													<p class="txt">홈페이지 리뉴얼 구축</p>
+												</div>
+											</div>
+										</a>
+										<div class="popup-box" style="display: none;">
+											<div>
+												<div class="pop-title-box">
+													<p>연세대학교 기술지주회사</p>
+												</div>
+												<div class="pop-con-box clearfix">
+													<div class="pop-img-box">
+														<div class="pc">
+															<div><img src="./img/img-ysholdings-web.png" alt="연세대학교 기술지주회사 웹 화면"></div>
+														</div>
+														<div class="mo">
+															<div><img src="./img/img-ysholdings-mo.png" alt="연세대학교 기술지주회사 모바일 화면"></div>
+														</div>
+													</div>
+													<div class="pop-txt-box">
+														<div class="info-box">
+															<div>
+																<h4>작업기간</h4>
+																<p>2019.09 ~ 2019.11</p>
+															</div>
+															<div>
+																<h4>업무</h4>
+																<ul class="ul-type-dot">
+																	<li>HTML5/CSS3 및 JavaScript를 활용한 반응형 웹 퍼블리싱</li>
+																	<li>대표 사이트 신규 구축 퍼블리싱 작업</li>
+																</ul>
+															</div>
+															<div>
+																<h4>성과</h4>
+																<ul class="ul-type-dot">
+																	<li>프로젝트 기한 준수 및 고객과의 협의를 통한 추가 요구사항 반영</li>
+																	<li>대표 사이트 신규 구축 완료</li>
+																</ul>
+															</div>
+															<div>
+																<h4>기여도</h4>
+																<ul class="ul-type-dot">
+																	<li>총 퍼블리싱 : 100%</li>
+																</ul>
+															</div>
+															<div class="link-box">
+																<h4>링크</h4>
+																<a href="https://www.ysuholdings.com/ko/index.do" title="새창열림" target="_blank">사이트
+																	바로가기</a>
+															</div>
+														</div>
+														<div class="navi-box">
+															<button type="button" class="btn-popup-prev"><i class="fas fa-angle-left"></i><span class="hide">이전</span></button>
+															<button type="button" class="btn-popup-next"><i class="fas fa-angle-right"></i><span class="hide">다음</span></button>
 														</div>
 													</div>
 												</div>
@@ -1039,7 +1186,7 @@
 												</div>
 											</div>
 										</a>
-										<div class="popup-box">
+										<div class="popup-box" style="display: none;">
 											<div>
 												<div class="pop-title-box">
 													<p>한림대학교</p>
@@ -1057,21 +1204,21 @@
 														<div class="info-box">
 															<div>
 																<h4>작업기간</h4>
-																<p class="period">2019.07 ~ 2019.09</p>
+																<p>2019.07 ~ 2019.09</p>
 															</div>
 															<div>
 																<h4>업무</h4>
 																<ul class="ul-type-dot">
 																	<li>HTML5/CSS3 및 JavaScript를 활용한 반응형 웹 퍼블리싱</li>
 																	<li>학과 사이트 리뉴얼 구축 관련 퍼블리싱</li>
-																</ol>
+																</ul>
 															</div>
 															<div>
 																<h4>성과</h4>
 																<ul class="ul-type-dot">
 																	<li>프로젝트 기한 준수 및 고객과의 협의를 통한 추가 요구사항 반영</li>
 																	<li>템플릿 5종 퍼블리싱 및 37개 학과 운영 사이트 구축 완료</li>
-																</ol>
+																</ul>
 															</div>
 															<div>
 																<h4>기여도</h4>
@@ -1080,18 +1227,17 @@
 																	<li>운영 사이트 구축 작업 : 약 33% (37개 사이트 중 12개 사이트 구축)</li>
 																</ul>
 															</div>
-														</div>
-														<div class="link-box">
-															<a href="#a" title="새창열림" target="_blank">사이트 바로가기</a>
-															<ul class="ul-type-bar">
-																<li>기타링크 : <a href="#a" title="새창열림" target="_blank">링크</a></li>
-															</ul>
+															<div class="link-box">
+																<h4>링크</h4>
+																<ul class="ul-type-bar">
+																	<li>템플릿 : <a href="https://grad.hallym.ac.kr/grad/index.do" title="새창열림" target="_blank">한림대학교 일반대학원</a></li>
+																</ul>
+																<p class="mark-p">템플릿은 운영중인 사이트로 대체</p>
+															</div>
 														</div>
 														<div class="navi-box">
-															<button type="button" class="btn-popup-prev"><i class="fas fa-angle-left"></i><span
-																	class="hide">이전</span></button>
-															<button type="button" class="btn-popup-next"><i class="fas fa-angle-right"></i><span
-																	class="hide">다음</span></button>
+															<button type="button" class="btn-popup-prev"><i class="fas fa-angle-left"></i><span class="hide">이전</span></button>
+															<button type="button" class="btn-popup-next"><i class="fas fa-angle-right"></i><span class="hide">다음</span></button>
 														</div>
 													</div>
 												</div>
@@ -1115,7 +1261,7 @@
 												</div>
 											</div>
 										</a>
-										<div class="popup-box">
+										<div class="popup-box last" style="display: none;">
 											<div>
 												<div class="pop-title-box">
 													<p>건설공제조합(파견)</p>
@@ -1133,7 +1279,7 @@
 														<div class="info-box">
 															<div>
 																<h4>작업기간</h4>
-																<p class="period">2019.03 ~ 2019.06</p>
+																<p>2019.03 ~ 2019.06</p>
 															</div>
 															<div>
 																<h4>업무</h4>
@@ -1141,7 +1287,7 @@
 																	<li>HTML5/CSS3 및 JavaScript를 활용한 반응형 웹 퍼블리싱</li>
 																	<li>대표 국문, 영문 및 부설기관 사이트 리뉴얼 퍼블리싱 작업</li>
 																	<li>웹표준 및 웹접근성 고려한 코드 작성</li>
-																</ol>
+																</ul>
 															</div>
 															<div>
 																<h4>성과</h4>
@@ -1149,7 +1295,7 @@
 																	<li>각 분야별 외부 직원들과의 협력으로 프로젝트 기한 준수</li>
 																	<li>대표 국문, 영문 및 부설기관 사이트 리뉴얼 구축 완료</li>
 																	<li>웹표준 및 웹접근성 심사 통과</li>
-																</ol>
+																</ul>
 															</div>
 															<div>
 																<h4>기여도</h4>
@@ -1157,15 +1303,15 @@
 																	<li>총 퍼블리싱 : 약 90%</li>
 																</ul>
 															</div>
-														</div>
-														<div class="link-box">
-															<a href="https://www.cgbest.co.kr/cgbest/index.do" title="새창열림" target="_blank">사이트 바로가기</a>
+															<div class="link-box">
+																<h4>링크</h4>
+																<a href="https://www.cgbest.co.kr/cgbest/index.do" title="새창열림" target="_blank">사이트
+																	바로가기</a>
+															</div>
 														</div>
 														<div class="navi-box">
-															<button type="button" class="btn-popup-prev"><i class="fas fa-angle-left"></i><span
-																	class="hide">이전</span></button>
-															<button type="button" class="btn-popup-next"><i class="fas fa-angle-right"></i><span
-																	class="hide">다음</span></button>
+															<button type="button" class="btn-popup-prev"><i class="fas fa-angle-left"></i><span class="hide">이전</span></button>
+															<button type="button" class="btn-popup-next"><i class="fas fa-angle-right"></i><span class="hide">다음</span></button>
 														</div>
 													</div>
 												</div>
@@ -1176,6 +1322,31 @@
 											</div>
 										</div>
 									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="con-box">
+						<div class="inner-box">
+							<h3>기타</h3>
+							<div class="mini-box">
+								<h4>퍼블리싱 참여율 50% 이상</h4>
+								<ul class="ul-type-dot">
+									<li>전주대학교 산학협력단 홈페이지 구축 프로젝트 <span class="period">2019.08 ~ 2019.09</span></li>
+									<li>연세대학교 원주캠퍼스 학과 홈페이지 개편 <span class="period">2018.12 ~ 2019.03</span></li>
+									<li>국회미래연구원 홈페이지 리뉴얼 프로젝트 <span class="period">2018.08 ~ 2018.10</span></li>
+									<li>유스퀘어 홈페이지 개편 프로젝트 <span class="period">2018.07 ~ 2019.01</span></li>
+								</ul>
+							</div>
+							<div class="mini-box">
+								<h4>퍼블리싱 참여율 50% 미만</h4>
+								<ul class="ul-type-dot">
+									<li>영남대학교 대표홈페이지 리뉴얼 프로젝트 <span class="period">2021.06 ~ 2021.08</span></li>
+									<li>충남대학교 학과, 부속 리뉴얼 프로젝트 <span class="period">2019.03 ~ 2019.04</span></li>
+									<li>연세대학교 글로벌인재대학 홈페이지 구축 프로젝트 <span class="period">2019.02</span></li>
+									<li>인베스트코리아 홈페이지 컨텐츠 리뉴얼 프로젝트 <span class="period">2018.11 ~ 2019.01</span></li>
+									<li>산업안전공단 홈페이지 메인 개편 프로젝트 <span class="period">2018.09 ~ 2018.11</span></li>
+									<li>상명대학교 대표 및 학과, 부속 리뉴얼 프로젝트 <span class="period">2018.07 ~ 2018.12</span></li>
 								</ul>
 							</div>
 						</div>
@@ -1195,5 +1366,4 @@
 		</footer>
 	</div>
 </body>
-
 </html>
