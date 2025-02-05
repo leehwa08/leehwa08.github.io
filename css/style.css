@@ -1,5 +1,5 @@
 /* main */
-#home{padding:0;height:100vh;}
+#home{padding:0;background:#000;height:100vh;}
 #home .inner-box{position:absolute;top:50%;left:50%;z-index:30;width:100%;transform:translate(-50%, -50%);mix-blend-mode:screen;}
 #home .video-background:after{content:'';position:fixed;top:0;left:0;z-index:10;width:100%;height:100%;}
 #home .video-background #bgVideo{position:fixed;top:0;left:0;min-width:100%;min-height:100%;}
