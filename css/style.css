@@ -166,6 +166,7 @@
 @media screen and (min-width:1025px) {
 	#about .my-career .inner-box > div{display:flex;}
 	#about .my-career .inner-box > div .info{width:300px;border-right:1px solid var(--secondary-color);}
+	#about .my-career .inner-box > div .txt{width:calc(100% - 300px);}
 									   
 	#work .work-con-box .popup-box .pop-img-box{position:sticky;top:0;}
 }
@@ -191,6 +192,7 @@
 	#about .my-info .intro .intro-txt-box p{padding:20px;}
 	#about .my-career{margin:-100px 0 0;padding:100px 0 0;}
 	#about .my-career .inner-box > div .info{padding:15px;border-bottom:1px solid var(--secondary-color);}
+	#about .my-career .inner-box > div .info > p{display:inline-block;}
 	#about .my-career .inner-box > div .info span{margin:5px 10px 0 0;}
 	#about .my-career .inner-box > div .info .period span{padding:5px 10px;font-size:1.3rem;}
 	#about .my-career .inner-box > div .info .company span:after{height:8px;}
