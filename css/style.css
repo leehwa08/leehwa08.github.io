@@ -33,12 +33,12 @@
 #about .my-career{margin:-150px 0 0;padding:150px 0 0;}
 #about .my-career .inner-box > div{border:1px solid var(--secondary-color);border-radius:1rem;box-shadow:2px 2px 5px rgba(0,0,0,.3);}
 #about .my-career .inner-box > div + div{margin:10px 0 0;}
-#about .my-career .inner-box > div > p, #about .my-career .inner-box > div > div{padding:20px 25px;}
-#about .my-career .inner-box > div > p span{display:inline-block;margin:5px 0 0 0;}
-#about .my-career .inner-box > div > p span:first-of-type{margin-top:0;}
-#about .my-career .inner-box > div > p .period{padding:6px 10px;background-color:var(--secondary-color);border-radius:5px;font-size:1.4rem;color:#fff;line-height:1;}
-#about .my-career .inner-box > div > p .company{position:relative;z-index:10;}
-#about .my-career .inner-box > div > p .company:after{content:'';position:absolute;bottom:0;left:0;z-index:-10;width:100%;height:10px;background-color:var(--first-color);opacity:.5;}
+#about .my-career .inner-box > div > div{padding:20px 25px;}
+#about .my-career .inner-box > div > .info span{display:inline-block;margin:5px 0 0 0;}
+#about .my-career .inner-box > div > .info span:first-of-type{margin-top:0;}
+#about .my-career .inner-box > div > .info .period span{padding:6px 10px;background-color:var(--secondary-color);border-radius:5px;font-size:1.4rem;color:#fff;line-height:1;}
+#about .my-career .inner-box > div > .info .company span{position:relative;z-index:10;}
+#about .my-career .inner-box > div > .info .company span:after{content:'';position:absolute;bottom:0;left:0;z-index:-10;width:100%;height:10px;background-color:var(--first-color);opacity:.5;}
 #about .my-skills ul{display:flex;flex-wrap:wrap;margin:-20px 0 0;}
 #about .my-skills ul li{margin:20px 21px 0 0;padding:25px 20px;width:calc(33.3333% - 14px);border:1px solid var(--secondary-color);background-color:#fff;border-radius:1rem;box-sizing:border-box;}
 #about .my-skills ul li:nth-of-type(3n){margin-right:0;}
@@ -190,11 +190,11 @@
 	#about .my-info .intro .intro-txt-box{padding:15px 0 0;}
 	#about .my-info .intro .intro-txt-box p{padding:20px;}
 	#about .my-career{margin:-100px 0 0;padding:100px 0 0;}
-	#about .my-career .inner-box > div > p{padding:15px;border-bottom:1px solid var(--secondary-color);}
-	#about .my-career .inner-box > div > p span{margin:5px 10px 0 0;}
-	#about .my-career .inner-box > div > p .period{padding:5px 10px;font-size:1.3rem;}
-	#about .my-career .inner-box > div > p .company:after{height:8px;}
-	#about .my-career .inner-box > div > div{padding:15px 20px;}
+	#about .my-career .inner-box > div .info{padding:15px;border-bottom:1px solid var(--secondary-color);}
+	#about .my-career .inner-box > div .info span{margin:5px 10px 0 0;}
+	#about .my-career .inner-box > div .info .period span{padding:5px 10px;font-size:1.3rem;}
+	#about .my-career .inner-box > div .info .company span:after{height:8px;}
+	#about .my-career .inner-box > div .txt{padding:15px 20px;}
 	#about .my-skills ul{margin:-16px 0 0;}
 	#about .my-skills ul li:nth-of-type(n){margin:16px 16px 0 0;padding:20px;width:calc(50% - 8px);}
 	#about .my-skills ul li:nth-of-type(2n){margin-right:0;}
