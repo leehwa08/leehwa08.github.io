@@ -34,11 +34,11 @@
 #about .my-career .inner-box > div{border:1px solid var(--secondary-color);border-radius:1rem;box-shadow:2px 2px 5px rgba(0,0,0,.3);}
 #about .my-career .inner-box > div + div{margin:10px 0 0;}
 #about .my-career .inner-box > div > div{padding:20px 25px;}
-#about .my-career .inner-box > div > .info span{display:inline-block;margin:5px 0 0 0;}
-#about .my-career .inner-box > div > .info span:first-of-type{margin-top:0;}
-#about .my-career .inner-box > div > .info .period span{padding:6px 10px;background-color:var(--secondary-color);border-radius:5px;font-size:1.4rem;color:#fff;line-height:1;}
-#about .my-career .inner-box > div > .info .company span{position:relative;z-index:10;}
-#about .my-career .inner-box > div > .info .company span:after{content:'';position:absolute;bottom:0;left:0;z-index:-10;width:100%;height:10px;background-color:var(--first-color);opacity:.5;}
+#about .my-career .inner-box > div .info span{display:inline-block;margin:5px 0 0 0;}
+#about .my-career .inner-box > div .info p:first-of-type span{margin-top:0;}
+#about .my-career .inner-box > div .info .period span{padding:6px 10px;background-color:var(--secondary-color);border-radius:5px;font-size:1.4rem;color:#fff;line-height:1;}
+#about .my-career .inner-box > div .info .company span{position:relative;z-index:10;}
+#about .my-career .inner-box > div .info .company span:after{content:'';position:absolute;bottom:0;left:0;z-index:-10;width:100%;height:10px;background-color:var(--first-color);opacity:.5;}
 #about .my-skills ul{display:flex;flex-wrap:wrap;margin:-20px 0 0;}
 #about .my-skills ul li{margin:20px 21px 0 0;padding:25px 20px;width:calc(33.3333% - 14px);border:1px solid var(--secondary-color);background-color:#fff;border-radius:1rem;box-sizing:border-box;}
 #about .my-skills ul li:nth-of-type(3n){margin-right:0;}
@@ -165,7 +165,7 @@
 /* Media Query */
 @media screen and (min-width:1025px) {
 	#about .my-career .inner-box > div{display:flex;}
-	#about .my-career .inner-box > div > p{border-right:1px solid var(--secondary-color);}
+	#about .my-career .inner-box > div .info{width:300px;border-right:1px solid var(--secondary-color);}
 									   
 	#work .work-con-box .popup-box .pop-img-box{position:sticky;top:0;}
 }
