@@ -32,6 +32,7 @@
 #about .my-info .intro .intro-txt-box p span{display:block;}
 #about .my-career{margin:-150px 0 0;padding:150px 0 0;}
 #about .my-career .inner-box > div{border:1px solid var(--secondary-color);border-radius:1rem;box-shadow:2px 2px 5px rgba(0,0,0,.3);}
+#about .my-career .inner-box > div + div{margin:10px 0 0;}
 #about .my-career .inner-box > div > p, #about .my-career .inner-box > div > div{padding:20px 25px;}
 #about .my-career .inner-box > div > p span{display:inline-block;margin:5px 0 0 0;}
 #about .my-career .inner-box > div > p span:first-of-type{margin-top:0;}
