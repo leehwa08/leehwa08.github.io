@@ -105,6 +105,7 @@ $(document).ready(function () {
 					mediaBoolean = true;
 				} else if($('body').hasClass('mobile')) {
 					// 디바이스에서는 클릭시 text박스 먼저 출력하기 위해 클래스 부여
+
 					if($(this).hasClass('mo-click')) {
 						$(this).removeClass('mo-click');
 						mediaBoolean = true;
@@ -120,7 +121,9 @@ $(document).ready(function () {
 					$('body').addClass('over-hidden');
 					$('.popup-box').hide();
 					$popupBox.addClass('open').fadeIn(200);
-					mockupScrolling($popupBox);
+					setTimeout(function(){
+						mockupScrolling($popupBox);
+					}, 500);
 				}
 		});
 
@@ -130,29 +133,37 @@ $(document).ready(function () {
 
 			$popupBox.removeClass('open').fadeOut(200);
 			$('body').removeClass('over-hidden');
-			mockupScrolling($popupBox);
 		});
 
 		// 팝업박스 내 이전, 다음 버튼 클릭 시 팝업 이동
 		$('.popup-box').find('.navi-box button').on('click', function (e) {
 			var $parentsLi = $(this).parents('li');
 			var $popupBox = $(this).parents('.popup-box');
+			var $clickBox;
+
+			$(this).parents('ul').addClass('navigator');
 
 			if ($(this).hasClass('btn-popup-prev')) {
+				$clickBox = $(this).parents('li').prev().find('.popup-box');
 				if ($popupBox.hasClass('first')) {
 					e.preventDefault();
 				} else {
 					$popupBox.find('.btn-popup-close').trigger('click');
-					$parentsLi.prev('li').find('.list-anchor').trigger('click');
+					$parentsLi.prev('li').find('.popup-box').addClass('open').show();
 				}
 			} else {
+				$clickBox = $(this).parents('li').next().find('.popup-box');
 				if ($popupBox.hasClass('last')) {
 					e.preventDefault();
 				} else {
 					$popupBox.find('.btn-popup-close').trigger('click');
-					$parentsLi.next('li').find('.list-anchor').trigger('click');
+					$parentsLi.next('li').find('.popup-box').addClass('open').show();
 				}
 			}
+			$clickBox.find('.pop-con-box').scrollTop(0);
+			setTimeout(function(){
+				mockupScrolling($clickBox);
+			}, 500);
 		});
 
 		function mockupScrolling(param) {
